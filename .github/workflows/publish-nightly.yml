@@ -2,7 +2,7 @@ name: Publish nightly release
 
 on:
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "48 23 * * *"
 
 jobs:
   publish:
