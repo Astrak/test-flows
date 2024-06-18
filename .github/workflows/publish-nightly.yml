@@ -1,4 +1,4 @@
-name: Publish nightly release
+name: Publish nightly
 
 on:
   schedule:
