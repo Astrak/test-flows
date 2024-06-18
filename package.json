@@ -1,5 +1,6 @@
 {
   "name": "astrak-test-flows",
+  "repository": "git://github.com/Astrak/test-flows.git",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
