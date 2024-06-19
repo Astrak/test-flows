@@ -2,7 +2,7 @@ name: Publish nightly
 
 on:
   schedule:
-    - cron: "19 0 * * *"
+    - cron: "30 9 * * *"
 
 jobs:
   publish:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Bump version and publish to npm
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # Use the npm token secret here
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # commit for patch
         run: |
           npm version patch -m "Bump version to %s for nightly release"
           npm publish
