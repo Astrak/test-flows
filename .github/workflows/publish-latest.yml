@@ -1,9 +1,9 @@
-name: Publish dev
+name: Publish latest
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - "v*"
 
 jobs:
   publish:
