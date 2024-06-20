@@ -2,7 +2,7 @@ name: Publish nightly
 
 on:
   schedule:
-    - cron: "50 * * * 1-5"
+    - cron: "20 * * * 1-5"
 
 jobs:
   publish:
@@ -25,5 +25,5 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # commit for patch
         run: |
-          npm version patch -m "Bump version to %s for nightly release"
+          npm version patch -m "Bump version to %s for nightly release" --no-git-tag-version
           npm publish
